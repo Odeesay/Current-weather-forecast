@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" href="07-Weather.png">
+    <title>Current weather forecast</title>
+</head>
+<body>
+    
+    <div class="wrap" id="wrap">
+        <div class="weather__data" id="weather__data">
+            <div class="loc__info" id="loc__info">
+                <h1 id="cit"></h1>
+                <div class="cont__info">
+                    <h1 id="country__name"></h1>
+                    <div class="flag" id="flag"></div>
+                </div>
+                
+            </div>
+            <div class="tempa weath__main__el" id="tempa">
+                <div class="tempa__left tm" id="tempa__Left">
+                    <h5>Actual:</h5>
+                    <h1 id="tem"></h1>
+                </div>
+                <div class="tempa__right tm" id="tempa__right">
+                    <h5>Feels like:</h5>
+                    <h1 id="feel__tem"></h1>
+                </div>
+            </div>
+            <div class="wth weath__main__el">
+                <div class="weather__icon" id="weather__icon"></div>
+                <h1 id="weather__qual"></h1>
+            </div>
+            <div class="weath__main__el" id="wind__info">
+                <div class="wind__dir" id="wind__dir">
+                    <h1 id="wind__arr">→</h1>
+                </div>
+                <h1 id="wind__speed"></h1>
+            </div>
+            
+        </div>
+        <div class="crd__wrp" id="crd__wrp">
+            <div class="card" id="card">
+                <div class="ico" id="ico"></div>
+                    <div class="inp">
+                        <input type="text" id="cityField" class="cityField">
+                        <label for="" id="place">Введіть місто</label>
+                    </div>
+                    <button id="check" class="check">Подивитись погоду</button>
+                    <div class="res" id="res"></div>
+            </div>
+        </div>
+        <div class="warning" id="warning">
+            <h1>Введіть назву населеного пункту</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
